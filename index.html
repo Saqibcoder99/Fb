@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fb||login</title>
     <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -18,15 +21,13 @@
         </div>
         <div class="box-2">
             <div class="log-form">
-            <form>
+            <form onsubmit="submitHandler(event)">
 
                 
-                <input type="text" required="required"  placeholder="Email address or phone number"/>
-
-                
-                <input type="text" required="required" placeholder="Password" />
-                <button class="log-in" >
-                    Log in
+            <input type="text"   placeholder="Email address or phone number"  id="ph"/>
+            <input type="password"  placeholder="Password" id="password" />
+                <button class="log-in">
+                  Log in
                 </button>
             </form>
             <p>
@@ -37,6 +38,8 @@
             </div>
         </div>
     </div>
+    <script src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

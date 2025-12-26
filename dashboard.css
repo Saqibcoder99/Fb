@@ -1,0 +1,495 @@
+ * {
+     margin: 0;
+     padding: 0;
+     border: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ body {
+     height: 100%;
+     width: 100%;
+ }
+
+ /*header*/
+ header {
+     display: flex;
+     height: 56px;
+     width: 100%;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     background-color: white;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+ }
+
+ .left-side {
+     display: flex;
+     margin-left: 10px;
+ }
+
+ .logo {
+     font-size: 40px;
+     color: #0866ff;
+     margin-top: 25px;
+     cursor: pointer;
+ }
+
+ .left-side input {
+     margin-bottom: 25px;
+     border-radius: 35px;
+     padding: 12px 10px;
+     width: 212px;
+     font-size: 14px;
+     border: none;
+     outline: none;
+     background-color: #f2f4f7;
+     margin-top: 27px;
+ }
+
+ .middle-side {
+     margin-left: -120px;
+ }
+
+ .middle-side i {
+     font-size: 24px;
+     height: 56px;
+     width: 65px;
+     align-content: center;
+     color: #787b7f;
+     margin-left: 80px;
+ }
+
+ .middle-side i:hover {
+     background-color: #e2e5e9;
+     cursor: pointer;
+ }
+
+ .right-side {
+     margin-right: 15px;
+     font-size: 20px;
+     transform: translate(50% 50%);
+ }
+
+ #notification {
+     height: 30px;
+     width: 43px;
+     background-color: #e2e5e9;
+     padding-top: 11px;
+     border-radius: 60%;
+     margin-bottom: 7px;
+     cursor: pointer;
+ }
+
+ .profile {
+     border-radius: 60%;
+     margin-bottom: -10px;
+     cursor: pointer;
+ }
+
+ /*layout*/
+ .layout {
+     display: flex;
+     font-size: 15px;
+ }
+
+ /* c-1, c-3*/
+ .c-1,
+ .c-3 {
+
+     width: 385px;
+     height: 700px;
+     background-color: #f2f4f7;
+     padding-top: 65px;
+     padding-left: 18px;
+     overflow-y: auto;
+ }
+
+ .c-3::-webkit-scrollbar {
+     width: 6px;
+ }
+
+ .c-1::-webkit-scrollbar {
+     width: 6px;
+ }
+
+ .c-1-item,
+ .pf {
+     display: flex;
+     padding: 11px 0px;
+     cursor: pointer;
+ }
+
+ .c-1-item p {
+     padding-top: 9px;
+     padding-left: 10px;
+ }
+
+ .c-1 i {
+     font-size: 26px;
+     color: #1a82f5;
+ }
+
+ hr {
+     margin-top: 6px;
+     margin-right: 22%;
+ }
+
+ .c-3 .c-1-item {
+     padding: 18px 0px;
+     padding-left: 25px;
+ }
+
+ .c-3 h3,
+ .c-1 h3 {
+     color: #6b6f73;
+     margin: 10px 0px;
+     margin-left: 5px;
+ }
+
+ .c-1-item:hover {
+     background-color: #e2e5e9;
+     cursor: pointer;
+ }
+
+ /*c-2*/
+ .c-2 {
+
+     width: 740px;
+     height: 700px;
+     background-color: #f2f4f7;
+     padding-top: 80px;
+     overflow-y: auto;
+     overflow-x: hidden;
+ }
+
+ .postupload-box {
+     display: flex;
+     height: 45px;
+     width: 660px;
+     background-color: white;
+     border-radius: 15px;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+     padding: 12px 16px 10px;
+ }
+
+ .post-box {
+     width: 472px;
+     height: 25px;
+     background-color: #f2f4f7;
+     padding: 8px 12px;
+     border-radius: 35px;
+     margin-left: 5px;
+     cursor: pointer;
+ }
+
+ .icons {
+     margin-top: 10px;
+     font-size: 20px;
+     margin-left: 20px;
+     cursor: pointer;
+ }
+
+ .icons i:nth-child(1) {
+     color: #f02849;
+     margin-right: 3px;
+ }
+
+ .icons i:nth-child(2) {
+     color: #45bd62;
+     margin-right: 3px;
+ }
+
+ .icons i:nth-child(3) {
+     color: #f7b928;
+     margin-right: 3px;
+ }
+
+ .story-box {
+     height: 200px;
+     width: 112px;
+     background-color: white;
+     margin-top: 15px;
+     border-radius: 8px;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+     cursor: pointer;
+
+ }
+
+ .story-box img {
+     height: 150px;
+     width: 112px;
+     border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+ }
+
+ .story-box p {
+     font-size: 15px;
+     margin-left: 11px;
+ }
+
+ .story-box span i {
+     color: #0866ff;
+     font-size: 30px;
+     background-color: white;
+     border-radius: 50%;
+     margin-top: -18px;
+     margin-left: 35px;
+     border: 5px solid white;
+ }
+
+.show{
+  visibility: visible;
+}
+.hidden{
+    display: none;
+}
+
+ .post-1,
+ .post-2,
+ .post-3,
+ .post-4,
+ .post-5 {
+     background-color: white;
+     width: 680px;
+     height: 800px;
+     margin-top: 15px;
+     border-radius: 18px;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+ }
+
+ .channel-name {
+     margin-left: 17px;
+     padding-top: 10px;
+     height: auto;
+     display: flex;
+     cursor: pointer;
+ }
+
+
+ .channel-name p {
+     margin-left: 5px;
+     font-weight: 350;
+     cursor: pointer;
+ }
+
+ .follow {
+     color: #1a82f5;
+     margin-left: 15px;
+     font-weight: 700;
+     cursor: pointer;
+ }
+ .time{
+    font-size: 12px;
+    color: #626466;
+ }
+
+ #content {
+     margin-left: 17px;
+     margin-top: 10px;
+ }
+
+ .post-img {
+     margin-left: 80px;
+     cursor: pointer;
+ }
+
+ .line {
+     margin-right: 0%;
+     margin-top: 10px;
+ }
+
+ .user-reaction {
+     margin-top: 19px;
+ }
+
+ .user-reaction i {
+     font-size: 20px;
+     color: #6d7073;
+     margin: 0px 5px 0 15%;
+     cursor: pointer;
+ }
+
+ #expand {
+     font-size: 14px;
+     color: #1a82f5;
+ }
+
+ #expand:hover {
+     text-decoration: underline;
+     cursor: pointer;
+ }
+
+ @media only screen and (max-width:1025px) {
+     .middle-side i {
+         margin-left: 50px;
+     }
+
+     .c-1 {
+         display: none;
+     }
+
+     .c-2 {
+         padding-left: 20px;
+     }
+
+     .c-3 {
+         width: 300px;
+     }
+
+     .postupload-box {
+         width: 650px;
+     }
+ }
+
+ @media only screen and (max-width:770px) {
+     .c-3 {
+         display: none;
+     }
+
+     .left-side input {
+         display: none;
+     }
+
+     .middle-side i {
+         margin-left: 0px;
+         font-size: 21px;
+     }
+
+     .middle-side {
+         margin-left: 0px;
+     }
+
+     .logo {
+         margin-top: 0px;
+     }
+
+
+     .c-2 {
+        padding-left: 16%;
+     }
+
+     .postupload-box {
+        height: 45px;
+         width: 500px;
+         padding: 12px 16px 10px;
+     }
+
+     .post-box {
+         width: 290px;
+         padding: 8px 12px;
+         margin-left: 5px;
+
+     }
+     
+     .post-1,
+     .post-2,
+     .post-3,
+     .post-4,
+     .post-5 {
+         width: 531px;
+         height: 820px;
+         margin-top: 15px;
+         margin-bottom: 15px;
+     }
+     .post-img {
+        margin-left: 5px;
+         cursor: pointer;
+     }
+ }
+
+  @media only screen and (max-width:430px) {
+    .middle-side i{
+        display: none;
+    }
+    .c-2{
+        padding-left: 0px;
+    }
+    .postupload-box{
+        border-radius: 0px;
+    }
+    .post-box{
+        width: 190px;
+        margin-left: 15px;
+    }
+      .post-1,
+     .post-2,
+     .post-3,
+     .post-4,
+     .post-5 {
+         width: 450px;
+         height: 750px;
+         margin-top: 15px;
+         margin-bottom: 15px;
+         border-radius: 0px;
+     }
+     .channel-name{
+        margin-top:20px ;
+        margin-bottom: 10px;
+     }
+     #content{
+        margin-bottom: 15px;
+     }
+   .post-img img{
+    width: 450px;
+   }
+     .user-reaction {
+         margin-top: 25px;
+     }
+
+     .user-reaction i {
+        margin: 0px 5px 0px 10%;         
+     }
+  }
+  @media only screen and (max-width:380px) {
+  .postupload-box{
+    margin-bottom: 15px;
+  }
+    .post-box{
+        width: 130px;
+        margin-left: 15px;
+        padding-bottom: 15px;
+    }
+#content{
+    font-size: 13px;
+    margin-right: 8px;
+}
+   
+    .post-img{
+        margin-left: 0px;
+    }
+   .post-img img{
+    width: 420px;
+   }
+     .user-reaction {
+         margin-top: 27px;
+     }
+
+     .user-reaction i {
+        margin: 0px 5px 0px 7%;         
+     }
+  }
+    @media only screen and (max-width:325px) {
+  .postupload-box{
+    margin-bottom: 19px;
+  }
+    .post-box{
+        width: 100px;
+        margin-left: 15px;
+        padding-bottom: 15px;
+    }
+  
+   .post-img img{
+    width: 380px;
+   }
+     .user-reaction {
+         margin-top: 27px;
+     }
+
+     .user-reaction i {
+        margin: 0px 5px 0px 7%;         
+     }
+     
+     #content span{
+        font-size: 12px;
+     }
+  }

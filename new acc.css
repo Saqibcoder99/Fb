@@ -144,6 +144,10 @@ body{
 .signup:hover{
     color: #f2f4f7;
 }
+.signup a{
+    text-decoration: none;
+    color: white;
+}
 .already-acc{
     text-align: center;
     display: flex;
